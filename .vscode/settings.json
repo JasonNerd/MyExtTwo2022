@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.md": "markdown",
+        "inttypes.h": "c",
+        "stdint.h": "c",
+        "filsys.h": "c"
+    }
+}
