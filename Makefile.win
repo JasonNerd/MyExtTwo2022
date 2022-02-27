@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = ext2.o test.o utils.o main.o disk/disk.o
-LINKOBJ  = ext2.o test.o utils.o main.o disk/disk.o
+OBJ      = ext2.o utils.o main.o disk.o
+LINKOBJ  = ext2.o utils.o main.o disk.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include" -I"C:/Program Files (x86)/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"
@@ -27,14 +27,11 @@ $(BIN): $(OBJ)
 ext2.o: ext2.c
 	$(CC) -c ext2.c -o ext2.o $(CFLAGS)
 
-test.o: test.c
-	$(CC) -c test.c -o test.o $(CFLAGS)
-
 utils.o: utils.c
 	$(CC) -c utils.c -o utils.o $(CFLAGS)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
 
-disk/disk.o: disk/disk.c
-	$(CC) -c disk/disk.c -o disk/disk.o $(CFLAGS)
+disk.o: disk.c
+	$(CC) -c disk.c -o disk.o $(CFLAGS)

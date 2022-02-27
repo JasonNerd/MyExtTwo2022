@@ -25,5 +25,11 @@ void read_inode_table(inode itb[]);
 int parse_cmd(char buf[], char *cmd_argvs[], char splch, char endch);
 // 展示错误
 void disp_err(char *func, int err);
-
+// 依据当前文件夹inode, 寻访当前文件夹所在block, 按名查找当前文件夹下是否
+// 包含fldir文件夹/文件, 查找成功则返回其inode 的 id, 若为-1则表示失败
+int search_fldir(inode cur, char *fldir, void(*oprate_valid)(dirent *));
+void op_empty(dirent *item);
+void op_ls(dirent *item);
+// 在bitmap里搜索第一个等于dst的bit, 反转这一位并返回其位置
+int reverse_bit(unsigned int bitmap[], int n, int dst);
 #endif

@@ -71,16 +71,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=test.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
 FileName=utils.c
 CompileCpp=0
 Folder=
@@ -90,7 +80,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
+[Unit4]
 FileName=utils.h
 CompileCpp=0
 Folder=
@@ -100,7 +90,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit6]
+[Unit5]
 FileName=main.c
 CompileCpp=0
 Folder=
@@ -110,8 +100,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit7]
-FileName=disk\disk.c
+[Unit6]
+FileName=disk.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -120,8 +110,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit8]
-FileName=disk\disk.h
+[Unit7]
+FileName=disk.h
 CompileCpp=0
 Folder=
 Compile=1

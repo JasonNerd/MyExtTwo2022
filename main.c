@@ -3,12 +3,8 @@
 #include <string.h>
 #include "ext2.h"
 #include "utils.h"
-#include "disk/disk.h"
-#define FUNC_ls "ls"
-#define FUNC_touch "touch"
-#define FUNC_mkdir "mkdir"
-#define FUNC_cp "cp"
-#define FUNC_shut "shutdown"
+#include "disk.h"
+
 void welcome();
 
 //char input_cmd[CMDLEN] = {0};

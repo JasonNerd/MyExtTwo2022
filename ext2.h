@@ -30,7 +30,7 @@
 #define FUNC_shut "shutdown"
 // 错误类型
 #define ARG_TOO_MANY 1
-
+#define NOT_EXIST 2
 
 typedef struct spb {
 	// super block: 4+(2+4*32)+(2+4*128) = 648B ---- 占用一个文件块
